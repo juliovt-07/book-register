@@ -219,6 +219,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'Cadastrar'
     TabOrder = 11
+    OnClick = btnRegisterClick
   end
   object btnDelete: TButton
     Left = 209
@@ -227,6 +228,7 @@ object Form1: TForm1
     Height = 33
     Caption = 'Excluir'
     TabOrder = 12
+    OnClick = btnDeleteClick
   end
   object btnSearch: TButton
     Left = 369

@@ -29,6 +29,8 @@ type
     btnRegister: TButton;
     btnDelete: TButton;
     btnSearch: TButton;
+    procedure btnRegisterClick(Sender: TObject);
+    procedure btnDeleteClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,5 +43,15 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.btnDeleteClick(Sender: TObject);
+begin
+  ShowMessage('O Livro "'+bookTitle.Text+'" foi deletado com sucesso!');
+end;
+
+procedure TForm1.btnRegisterClick(Sender: TObject);
+begin
+  ShowMessage('Livro cadastrado com sucesso!');
+end;
 
 end.
